@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Pesquisa</title>
+</head>
+<body>
+  
+<div class="container"> 
+<header class="header">
+    <h1 id="title">Formulário de Pesquisa</h1>
+    <p id="description"> A pesquisa busca analisar, sob a perspectiva dos servidores públicos, quais os pontos críticos observados no processo de fiscalização de contratos administrativos. </p>
+</header>
+<form id="survey-form"> 
+<div class="form-group">
+<label id="name-label" for="name">Seu nome:</label></input> 
+<input id="name" type="text" required  placeholder="Insira seu nome">
+</div>
+<div class="form-group">
+<label id="siape-label">Sua matrícula:</label></input>
+<input id="siape" type="number" required name="siape" placeholder="Mat.SIAPE"> 
+</div>
+<div class="form-group">
+    <label id="email-label">Seu email:</label></input>
+    <input id="email" type="email" name="email" placeholder="Insira seu Email (opcional)"> 
+    </div>
+<div class="form-group">
+    <p> Qual seu cargo na instituição?</p>
+<select id="dropdown" name="cargo" required>
+  <option value="professor"> Professor(a)</option> 
+  <option value="tecnico"> Técnico-Administrativo</option>
+  </select>
+</div>
+<div class="form-group">
+<p> Em relação à fiscalização contratual, como você encontra-se atualmente?</p>
+<label><input type="radio" name="funcao" value="gestor" class="input-radio"> Sou Gestor Contratual (titular/substituto) </input></label>
+<label><input type="radio" name="funcao" value="fiscal-administrativo" class="input-radio"> Sou Fiscal Administrativo (titular/substituto)</input></label>
+<label><input type="radio" name="funcao" value="fiscal-tecnico" class="input-radio"> Sou Fiscal Técnico (titular/substituto)</input></label>
+<label><input type="radio" name="funcao" value="fiscal-setorial" class="input-radio"> Sou Fiscal Setorial (titular/substituto) </input></label>
+</div>
+
+
+<div class="form-group">
+<p>Há quanto tempo você desempenha funções relacionadas à gestão/fiscalização de contratos administrativos?</p>
+<select id="dropdowntwo">
+  <option value="umano">Até 1 (um) ano</option> 
+  <option value="umadoisanos">De 1 (um) a 2 (dois) anos</option>
+  <option value="doisatresanos">De 2 (dois) a 3 (três) anos</option>
+  <option value="acimadetresanos">Acima de 3 (três) anos</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <p>Na sua opinião, quais as principais dificuldades encontradas durante o processo de gestão/fiscalização de contratos administrativos (Marque todos os que se aplicam)</p>
+<label><input name="dificuldades" type="checkbox" value="processodigitais" class="input-checkbox">Dificuldade de manuseio dos processos digitais</input></label>
+<label><input name="dificuldades" type="checkbox" value="faltacapacitacao" class="input-checkbox">Falta de capacitação para desempenho da função</input></label>
+<label><input name="dificuldades" type="checkbox" value="divergencia" class="input-checkbox">Divergência do cargo ocupado com a função de gestor/fiscal</input></label>
+<label><input name="dificuldades" type="checkbox" value="numeroelevado" class="input-checkbox">Número elevado de contratos para fiscalizar/gerir</input></label>
+<label><input name="dificuldades" type="checkbox" value="sobrecarga" class="input-checkbox">Sobrecarga de trabalho do cargo ocupado</input></label>
+<label><input name="dificuldades" type="checkbox" value="faltainstrucao" class="input-checkbox">Falta de instrução inicial</input></label>
+<label><input name="dificuldades" type="checkbox" value="baixaoferta" class="input-checkbox">Baixa oferta de cursos de capacitação</input></label>
+<label><input name="dificuldades" type="checkbox" value="desentendimentos" class="input-checkbox">Desentendimentos com a empresa contratada</input></label>
+
+</div>
+
+<div class="form-group">
+    <p> Algum comentário ou sugestão?</p>
+<textarea id="comentario" class="input-textarea" name="comentario" type="textarea" placeholder="Insira seu comentário aqui..."></textarea>
+</div>
+<div class="form-group">
+<button type="submit" id="submit" class="submit-button">Enviar</button>
+</div>
+
+</form>
+</div>
+</body>
+</html>
